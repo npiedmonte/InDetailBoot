@@ -218,18 +218,18 @@ p {
 }
 
 #image-gallery { 
-  width: 600px; 
   margin: 0 auto;
 }
 
 #current-image { 
-  width: 100%;
+  width: 100vw;
 } 
 
 #image-thumbs { 
   display: flex; 
   justify-content: center; 
   margin-top: 20px;
+  width: 100vw;
 }
 
 .thumb { 
