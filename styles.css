@@ -1,0 +1,300 @@
+/* -------------------------------------------------------------------------- */
+
+/*** Variables */
+
+:root{
+
+	--header-height: 5rem;
+	--mobile-menu-width: 4rem;
+
+	--grey-dark:#353535;
+  --grey-light: #747474;
+	--tan: #FBFACD;
+	--purple-dark: #231c6e;
+}
+
+/* -------------------------------------------------------------------------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+  font-family: Sans-Serif;
+  font-size: 16px;
+  /* background-image: url(./images/background/purple_canvas.png); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.nav {
+  background: var(--grey-dark);
+  padding: 0 15px;
+}
+
+.logo {
+  display: block;
+  width: 30%;
+  height: auto;
+  padding: 3%;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  width: 100%;
+}
+
+/** Mobile Menu **/
+
+.cent {
+  text-align: center;
+}
+
+.line-brk {
+  width: 50%;
+  margin: 5% 25%;
+  border-color: var(--purple-dark);
+}
+
+.shoot-cards {
+  margin: 0 auto;
+}
+
+.card-btn {
+  background-color: var(--purple-dark);
+  color: #fff;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 75vw;
+  object-fit: cover;
+}
+
+/* Footer */
+#footer{
+  justify-content: center;
+	padding: 2% 0;
+	background-color: var(--grey-dark);
+}
+
+.social-logo{
+  margin: 0 2%;
+	height: auto;
+	width: 5%;
+}
+
+.social-links {
+  text-align: center;
+}
+
+.social-section p {
+	font-size: 0.75rem;
+}
+
+.env-icon {
+  width: 5%;
+  padding-bottom: 1%;
+}
+
+.lt-txt {
+  color: white;
+}
+
+/* About Styling */
+
+.about-title {
+  text-align: center;
+  padding: 3%;
+}
+
+.prof-name {
+  text-align: center;
+}
+
+.prof-img {
+  width: 50%;
+  height: 50%;
+  margin: 3% auto;
+  display: block;
+}
+
+.prof-txt {
+  text-align: center;
+}
+
+/* Contact Styling */
+
+.signup-form {
+	background-color: rgb(31, 0, 66);
+	padding: 5% 0 5% 0;
+}
+
+.signup-form img {
+	height: 20%;
+	width: auto;
+}
+
+.signup-form h2 {
+	font-size: 1.6rem;
+	padding: 5% 10%;
+}
+
+label {
+  display: inline-block;
+  font-size: 1rem;
+  width: 100px;
+  text-align: right;
+  margin: 1% 0 0 0;
+}
+  
+input {
+  padding: 4% 4%;
+}
+
+.signup-form {
+  text-align: center;
+  font-weight: bold;
+  color:#BFA2DB;
+}
+
+.data-input {
+  font-size: 1.1rem;
+}
+
+.top-box {
+  border-radius: 2px;
+  margin-bottom: 2%;
+}
+
+.mid-box {
+  border-radius: 0;
+  margin-bottom: 2%;
+}
+
+.bot-box {
+  border-radius: 2px;
+  margin-bottom: 4%;
+}
+
+.submit-btn {
+  background-color: #BFA2DB;
+  height: 7%;
+  width: 20%;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 0 auto 3% auto;
+  font-weight: bold;
+}
+
+/* Gallery Styling */
+
+/* .port-all-gall {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1%;
+  min-height: 120vh;
+} */
+
+.intro { 
+  text-align: center; 
+  font-family: Arial;
+}
+
+h2 { 
+  font-size: 36px;
+}
+
+p { 
+  font-size: 14pt;
+}
+
+#image-gallery { 
+  width: 600px; 
+  margin: 0 auto;
+}
+
+#current-image { 
+  width: 100%;
+} 
+
+#image-thumbs { 
+  display: flex; 
+  justify-content: center; 
+  margin-top: 20px;
+}
+
+.thumb { 
+  width: 80px; 
+  height: 80px; 
+  object-fit: cover; 
+  margin-right: 10px; 
+  cursor: pointer;
+}
+
+/** Tablet menu **/
+
+@media all and (min-width: 700px) {
+
+  .menu .item {
+    justify-content: center;
+  }
+
+  .toggle {
+    flex: 1;
+    text-align: right;
+    order: 2;
+  }
+
+  /* Home Styling*/
+
+  /* .intro-txt {
+    font-size: 48px;
+  } */
+
+}
+
+/** Desktop menu **/
+
+@media all and (min-width: 960px) {
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* .nav-links {
+    display: flex;
+  } */
+
+  .item {
+    position: relative;
+    display: block;
+    width: auto;
+  }
+
+  .submenu-active .submenu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 68px;
+    background: #111;
+  }
+
+  .toggle {
+    display: none;
+  }
+
+  .submenu-active {
+    border-radius: 0;
+  }
+
+}
