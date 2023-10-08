@@ -116,6 +116,11 @@ a {
   padding: 3%;
 }
 
+.about-txt {
+  text-align: center;
+  padding: 0 5%;
+}
+
 .prof-name {
   text-align: center;
 }
@@ -129,6 +134,7 @@ a {
 
 .prof-txt {
   text-align: center;
+  padding: 0 5%;
 }
 
 /* Contact Styling */
@@ -197,13 +203,6 @@ input {
 
 /* Gallery Styling */
 
-/* .port-all-gall {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1%;
-  min-height: 120vh;
-} */
-
 .intro { 
   text-align: center; 
   font-family: Arial;
@@ -217,25 +216,20 @@ p {
   font-size: 14pt;
 }
 
-.image-gallery {
-  /* Mobile first */
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.image-gallery .column {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.image-item img {
-  width: 100%;
-  border-radius: 5px;
-  height: 100%;
-  object-fit: cover;
-}
+#image-gallery { 
+    margin: 0 auto;
+  }
+  
+  #current-image { 
+    width: 100vw;
+  } 
+  
+  .thumb { 
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100vw;
+  }
 
 /** Tablet menu **/
 
