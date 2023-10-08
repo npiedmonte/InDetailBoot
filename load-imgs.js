@@ -1,10 +1,10 @@
 // import { readdir } from 'node:fs';
-const fs = require('fs');
-const dir = '/images';
+// const fs = require('fs');
+// const dir = '/images';
 
-fs.readdir(dir, (err, files) => {
-  console.log(files);
-});
+// fs.readdir(dir, (err, files) => {
+//   console.log(files);
+// });
 
 var path = window.location.pathname;
 var page = path.split("/").pop();
